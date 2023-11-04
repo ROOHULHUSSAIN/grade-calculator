@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100%;
+    background: rgb(1, 81, 83);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    width: 800px;
+    height: 500px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(44, 108, 109);
+  }
+  
+  .marks {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .gradeBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* background: #fff; */
+  }
+  
+  .gradehead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .mid {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .line {
+    width: 8px;
+    height: 18vh;
+    background: rgb(1, 81, 83);
+    margin: 1rem 1rem;
+  }
+  
+  .gradehead h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: rgb(1, 81, 83);
+    text-shadow: 1px 1px 1px rgb(229, 246, 247);
+    animation: stud 1.5s infinite;
+  }
+  
+  @keyframes stud {
+    to {
+      transform: scale(1.3);
+      transition: 1s;
+    }
+  }
+  
+  .mainbox {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: rgb(173, 236, 250);
+  }
+  
+  .gradeBox label,
+  .gradeBox input {
+    padding: 0.5rem;
+    margin: 1rem 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .gradeBox label{
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  
+  .gradeBox input {
+    width: 100%;
+    border-radius: 7px;
+  }
+  
+  .btn {
+    padding: 1rem;
+    border-radius: 5px;
+    outline-style: none;
+  }
+  
+  .result {
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  
+  @media(max-width:500px)
+  {
+    .container {
+      width: 100%;
+      height: 600px;
+    }
+    .container .marks{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  @media(max-width:330px) and (min-width:449px)
+  {
+    .container {
+      width: 100%;
+      height: 550px;
+    }
+    .container .marks{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  @media(max-height:300px) and (max-width:660px)
+  {
+    .container {
+      width: 100%;
+      height: 100%;
+    }
+    .gradeBox label,
+    .gradeBox input {
+    padding: 0.2rem;
+    margin: 0.3rem 0.3rem;
+  }
+  }
+  
+  @media(max-height:420px) and (max-width:830px)
+  {
+    .container {
+      width: 90%;
+      height: 90%;
+    }
+    .gradeBox label,
+    .gradeBox input {
+    padding: 0.2rem;
+    margin: 0.3rem 0.3rem;
+  }
+  }
